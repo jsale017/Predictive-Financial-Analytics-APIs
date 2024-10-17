@@ -34,8 +34,8 @@ Technology Stocks Used during the Analysis
 
 ```mermaid
 graph TD;
-    A[Extract Data] --> B[Parse Data];
-    B --> C[Loading Data into BigQuery];
+    A[Extracting Data from Alpha Vantage API] --> B[Parsing Raw Data into Tabular Format];
+    B --> C[Loading Parsed Data into BigQuery];
     C --> D[Orchestration with Airflow & Google Composer]
 
 
